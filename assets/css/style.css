@@ -1,0 +1,114 @@
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+/*Background Color*/
+
+/*Font Color*/
+.txt-color-1{
+    color: #ffffff;
+}
+.txt-color-2{
+    color: #101010;
+}
+.fs-7{
+    font-size: 0.9em;
+}
+.fs-8{
+    font-size: 0.8em;
+}
+
+
+/*Background*/
+.background-1{
+    background-color: #BCBCBC;
+}
+.background-3{
+    background-image: linear-gradient(to left bottom, #dc0000, #d30000, #c90000, #c00000, #b70000);
+}
+.background-4{
+    background-color: #000000;
+}
+.background-2{
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)),url("../../assets/img/background.svg"), no-repeat;
+    height: 100vh;
+}
+
+
+
+/*Custom*/
+.mt-6{
+    margin-top: 8em;
+}
+.img-fit{
+    object-fit: cover;
+}
+.rounded-4{
+    border-radius:15px ;
+}
+
+.h-f{
+    height: calc(100vh - 0px);
+}
+
+.border-b{
+    border-bottom: 1px solid #ffffff;
+}
+.border-cus{
+    border: 2px dotted #ffffff;
+}
+.border-l{
+    border-left: 2px dotted #ffffff;
+}
+.border-r{
+    border-right: 2px dotted #ffffff;
+}
+.border-b{
+    border-bottom: 2px dotted #ffffff;
+}
+
+/*Image Overlay*/
+.service-main:hover .service-over{
+    opacity: 0.5;
+}
+.service-main:hover .service-overlay{
+    opacity: 1;
+}
+.service-overlay{
+    background:linear-gradient(0deg, rgba(26, 26, 26, 0.8), rgba(0, 0, 0, 0.8));
+    transition: .5s ease;
+    opacity: 0;
+    transition: .5s ease;
+    text-align: center;
+}
+.bullets li{
+    list-style-type: square;
+    font-size: 1em;
+    margin-left: 15px;
+}
+.scroll-div{
+    overflow: scroll; height: 100vh; display: none;
+}
+/* width */
+.scroll-div::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+.scroll-div::-webkit-scrollbar-track {
+    background: #000000;
+}
+
+/* Handle */
+.scroll-div::-webkit-scrollbar-thumb {
+    background: #ffffff;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+.scroll-div::-webkit-scrollbar-thumb:hover {
+    background: rgba(220, 0, 0, 0.73);
+}

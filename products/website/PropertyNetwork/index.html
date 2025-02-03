@@ -1,0 +1,1964 @@
+<!DOCTYPE html>
+<html lang="en" data-textdirection="ltr">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="csrf-token" content="">
+    <title>Property Network</title>
+    <base href="">
+
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <meta property="og:url"           content="" />
+    <meta property="og:type"          content="" />
+    <meta property="og:title"         content="" />
+    <meta property="og:description"   content="" />
+    <meta property="og:image"         content="" />
+
+    <link rel="apple-touch-icon" sizes="57x57" href="">
+    <link rel="apple-touch-icon" sizes="60x60" href="">
+    <link rel="apple-touch-icon" sizes="72x72" href="">
+    <link rel="apple-touch-icon" sizes="76x76" href="">
+    <link rel="apple-touch-icon" sizes="114x114" href="">
+    <link rel="apple-touch-icon" sizes="120x120" href="">
+    <link rel="apple-touch-icon" sizes="144x144" href="">
+    <link rel="apple-touch-icon" sizes="152x152" href="">
+    <link rel="apple-touch-icon" sizes="180x180" href="">
+    <link rel="icon" type="image/png" sizes="192x192"  href="">
+    <link rel="icon" type="image/png" sizes="32x32" href="">
+    <link rel="icon" type="image/png" sizes="96x96" href="">
+    <link rel="icon" type="image/png" sizes="16x16" href="">
+    <link rel="manifest" href="">
+
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="">
+    <meta name="theme-color" content="#ffffff">
+
+
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:300,400,600,700">
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <link href="assets/vendors/bootstrap-5.1.3-dist/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/vendors/slick-1.8.1/slick/slick-theme.css" rel="stylesheet">
+    <link href="assets/vendors/slick-1.8.1/slick/slick.css" rel="stylesheet">
+
+    <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+<body>
+<!------------------------------Header--------------------------------------->
+<header class="background-1 header-nav-bar pb-5">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                <img src="assets/img/logo-sm.svg" height="100px" width="100px" class="img-fit">
+            </a>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about-us.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="properties.html">Properties</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="location.html">Location</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact-us.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="cus-btn-2 btn ch-8 ps-2 pe-2 rounded-3">
+                            + Add Property
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <a href="creat-account.html" class="cus-btn-5 btn ch-8 ps-2 pe-2 rounded-3">
+                            Sign up
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <div class="ch-5 text-black fb-b mt-5 text-center">
+                    Pakistan's 1st Online Real Estate Marketplace
+                </div>
+            </div>
+
+
+            <div class="col-sm-12 col-md-7 col-lg-7 mx-auto mt-5 header-tab-nav">
+                <div class="d-flex justify-content-center">
+                    <ul class="nav nav-pills mb-4" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="pills-buy-tab" data-bs-toggle="pill" data-bs-target="#pills-buy" type="button" role="tab" aria-controls="pills-buy" aria-selected="true">BUY</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-sale-tab" data-bs-toggle="pill" data-bs-target="#pills-sale" type="button" role="tab" aria-controls="pills-sale" aria-selected="false">SALE</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-invest-tab" data-bs-toggle="pill" data-bs-target="#pills-invest" type="button" role="tab" aria-controls="pills-invest" aria-selected="false">INVEST</button>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-buy" role="tabpanel" aria-labelledby="pills-buy-tab">
+                        <div class="d-flex bd-highlight header-cus-search">
+                            <div class=" flex-fill bd-highlight">
+                                <div class="d-flex flex-column bd-highlight">
+                                    <div class=" bd-highlight ">
+                                        <label class="form-label ">Locaiton</label>
+                                    </div>
+                                    <div class=" bd-highlight">
+                                        <input type="text" class="form-control" placeholder="City, Area, etc.">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-3 flex-fill bd-highlight">
+                                <input type="text" class="form-control" placeholder="Property Type">
+                            </div>
+                            <div class="mt-2 flex-shrink-1 bd-highlight ps-2 pe-2">
+                                <button class="cus-btn-5 btn ch-8 p-3 rounded-3">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-sale" role="tabpanel" aria-labelledby="pills-sale-tab">
+                        <div class="d-flex bd-highlight header-cus-search">
+                            <div class=" flex-fill bd-highlight">
+                                <div class="d-flex flex-column bd-highlight">
+                                    <div class=" bd-highlight ">
+                                        <label class="form-label ">Locaiton</label>
+                                    </div>
+                                    <div class=" bd-highlight">
+                                        <input type="text" class="form-control" placeholder="City, Area, etc.">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-3 flex-fill bd-highlight">
+                                <input type="text" class="form-control" placeholder="Property Type">
+                            </div>
+                            <div class="mt-2 flex-shrink-1 bd-highlight ps-2 pe-2">
+                                <button class="cus-btn-5 btn ch-8 p-3 rounded-3">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-invest" role="tabpanel" aria-labelledby="pills-invest-tab">
+                        <div class="d-flex bd-highlight header-cus-search">
+                            <div class=" flex-fill bd-highlight">
+                                <div class="d-flex flex-column bd-highlight">
+                                    <div class=" bd-highlight ">
+                                        <label class="form-label ">Locaiton</label>
+                                    </div>
+                                    <div class=" bd-highlight">
+                                        <input type="text" class="form-control" placeholder="City, Area, etc.">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-3 flex-fill bd-highlight">
+                                <input type="text" class="form-control" placeholder="Property Type">
+                            </div>
+                            <div class="mt-2 flex-shrink-1 bd-highlight ps-2 pe-2">
+                                <button class="cus-btn-5 btn ch-8 p-3 rounded-3">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-12 text-center">
+                <div class="ch-7 txt-color-2 mt-3 fb-b">
+                    Don't want the hassle?
+                </div>
+                <div class="ch-6 text-black mt-2 fb-b">
+                    Let us handle everything for you!
+                </div>
+
+                <button class="cus-btn-2 mt-3 btn ch-8 ps-4 pe-4 pt-2 pb-2 rounded-3">
+                    WANTED
+                </button>
+            </div>
+
+
+
+        </div>
+    </div>
+</header>
+<!-----------------------------/Header--------------------------------------->
+
+<!------------------------------Section-------------------------------------->
+<section class="mt-3 mb-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12 ">
+                <div class="ch-6 text-black fb-b">Top areas by city</div>
+
+                <div class="mt-3 section-tab-nav-1">
+                    <ul class="nav nav-pills mb-4" id="pills1-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="pills1-islamabad-tab" data-bs-toggle="pill" data-bs-target="#pills1-islamabad" type="button" role="tab" aria-controls="pills1-islamabad" aria-selected="true">ISLAMABAD</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills1-rawalpindi-tab" data-bs-toggle="pill" data-bs-target="#pills1-rawalpindi" type="button" role="tab" aria-controls="pills1-rawalpindi" aria-selected="false">RAWALPINDI</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills1-lahore-tab" data-bs-toggle="pill" data-bs-target="#pills1-lahore" type="button" role="tab" aria-controls="pills1-lahore" aria-selected="false">LAHORE</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills1-karachi-tab" data-bs-toggle="pill" data-bs-target="#pills1-karachi" type="button" role="tab" aria-controls="pills1-karachi" aria-selected="false">KARACHI</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills1-peshawar-tab" data-bs-toggle="pill" data-bs-target="#pills1-peshawar" type="button" role="tab" aria-controls="pills1-peshawar" aria-selected="false">PESHAWAR</button>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="p-2 border-bottom border-1 border-top ">
+                    <div class="d-flex flex-row bd-highlight">
+                        <div class="p-2 bd-highlight">
+                            <div>
+                                <img src="assets/img/icons/index-icon-house-sell.svg"> <span class="ch-6 text-black ">For Sale:</span><span class="ch-6 txt-color-2">1000+</span>
+                            </div>
+                        </div>
+                        <div class="pt-2 ps-5 bd-highlight">
+                            <div>
+                                <img src="assets/img/icons/index-icon-house-buy.svg"> <span class="ch-6 text-black ">For Buy:</span><span class="ch-6 txt-color-2">1000+</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="product-home-slider mt-4 mb-4">
+
+                    <div class="p-2">
+                        <div class="card rounded-10">
+                            <img src="assets/img/property/web-property-01.jpg" class="card-img-top rounded-t-10" alt="...">
+                            <div class="card-body">
+                                <div class="card-title text-black ch-6">E-11</div>
+
+                                <div class="d-flex bd-highlight border-1 border-top pt-2 ">
+                                    <div class="me-auto bd-highlight text-center">
+                                        <div>
+                                            <img src="assets/img/icons/index-icon-house-buy.svg" height="30px" width="30px"> <span class="ch-8 fb-b text-muted ">500+</span>
+                                        </div>
+                                        <div class="ch-8 txt-color-2 fb-b">
+                                            On Sale
+                                        </div>
+                                    </div>
+                                    <div class=" bd-highlight text-center">
+                                        <div>
+                                            <img src="assets/img/icons/index-icon-house-sell.svg" height="30px" width="30px"> <span class="ch-8 fb-b text-muted ">500+</span>
+                                        </div>
+                                        <div class="ch-8 txt-color-2 fb-b">
+                                            On Sale
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-2">
+                        <div class="card rounded-10">
+                            <img src="assets/img/property/web-property-02.jpg" class="card-img-top rounded-t-10" alt="...">
+                            <div class="card-body">
+                                <div class="card-title text-black ch-6">G-13</div>
+
+                                <div class="d-flex bd-highlight border-1 border-top pt-2 ">
+                                    <div class="me-auto bd-highlight text-center">
+                                        <div>
+                                            <img src="assets/img/icons/index-icon-house-buy.svg" height="30px" width="30px"> <span class="ch-8 fb-b text-muted ">500+</span>
+                                        </div>
+                                        <div class="ch-8 txt-color-2 fb-b">
+                                            On Sale
+                                        </div>
+                                    </div>
+                                    <div class=" bd-highlight text-center">
+                                        <div>
+                                            <img src="assets/img/icons/index-icon-house-sell.svg" height="30px" width="30px"> <span class="ch-8 fb-b text-muted ">500+</span>
+                                        </div>
+                                        <div class="ch-8 txt-color-2 fb-b">
+                                            On Sale
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-2">
+                        <div class="card rounded-10">
+                            <img src="assets/img/property/web-property-03.jpg" class="card-img-top rounded-t-10" alt="...">
+                            <div class="card-body">
+                                <div class="card-title text-black ch-6">Bani Gala</div>
+
+                                <div class="d-flex bd-highlight border-1 border-top pt-2 ">
+                                    <div class="me-auto bd-highlight text-center">
+                                        <div>
+                                            <img src="assets/img/icons/index-icon-house-buy.svg" height="30px" width="30px"> <span class="ch-8 fb-b text-muted ">500+</span>
+                                        </div>
+                                        <div class="ch-8 txt-color-2 fb-b">
+                                            On Sale
+                                        </div>
+                                    </div>
+                                    <div class=" bd-highlight text-center">
+                                        <div>
+                                            <img src="assets/img/icons/index-icon-house-sell.svg" height="30px" width="30px"> <span class="ch-8 fb-b text-muted ">500+</span>
+                                        </div>
+                                        <div class="ch-8 txt-color-2 fb-b">
+                                            On Sale
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-2">
+                        <div class="card rounded-10">
+                            <img src="assets/img/property/web-property-04.jpg" class="card-img-top rounded-t-10" alt="...">
+                            <div class="card-body">
+                                <div class="card-title text-black ch-6">B-17</div>
+
+                                <div class="d-flex bd-highlight border-1 border-top pt-2 ">
+                                    <div class="me-auto bd-highlight text-center">
+                                        <div>
+                                            <img src="assets/img/icons/index-icon-house-buy.svg" height="30px" width="30px"> <span class="ch-8 fb-b text-muted ">500+</span>
+                                        </div>
+                                        <div class="ch-8 txt-color-2 fb-b">
+                                            On Sale
+                                        </div>
+                                    </div>
+                                    <div class=" bd-highlight text-center">
+                                        <div>
+                                            <img src="assets/img/icons/index-icon-house-sell.svg" height="30px" width="30px"> <span class="ch-8 fb-b text-muted ">500+</span>
+                                        </div>
+                                        <div class="ch-8 txt-color-2 fb-b">
+                                            On Sale
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-2">
+                        <div class="card rounded-10">
+                            <img src="assets/img/property/web-property-01.jpg" class="card-img-top rounded-t-10" alt="...">
+                            <div class="card-body">
+                                <div class="card-title text-black ch-6">E-11</div>
+
+                                <div class="d-flex bd-highlight border-1 border-top pt-2 ">
+                                    <div class="me-auto bd-highlight text-center">
+                                        <div>
+                                            <img src="assets/img/icons/index-icon-house-buy.svg" height="30px" width="30px"> <span class="ch-8 fb-b text-muted ">500+</span>
+                                        </div>
+                                        <div class="ch-8 txt-color-2 fb-b">
+                                            On Sale
+                                        </div>
+                                    </div>
+                                    <div class=" bd-highlight text-center">
+                                        <div>
+                                            <img src="assets/img/icons/index-icon-house-sell.svg" height="30px" width="30px"> <span class="ch-8 fb-b text-muted ">500+</span>
+                                        </div>
+                                        <div class="ch-8 txt-color-2 fb-b">
+                                            On Sale
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-2">
+                        <div class="card rounded-10">
+                            <img src="assets/img/property/web-property-02.jpg" class="card-img-top rounded-t-10" alt="...">
+                            <div class="card-body">
+                                <div class="card-title text-black ch-6">G-13</div>
+
+                                <div class="d-flex bd-highlight border-1 border-top pt-2 ">
+                                    <div class="me-auto bd-highlight text-center">
+                                        <div>
+                                            <img src="assets/img/icons/index-icon-house-buy.svg" height="30px" width="30px"> <span class="ch-8 fb-b text-muted ">500+</span>
+                                        </div>
+                                        <div class="ch-8 txt-color-2 fb-b">
+                                            On Sale
+                                        </div>
+                                    </div>
+                                    <div class=" bd-highlight text-center">
+                                        <div>
+                                            <img src="assets/img/icons/index-icon-house-sell.svg" height="30px" width="30px"> <span class="ch-8 fb-b text-muted ">500+</span>
+                                        </div>
+                                        <div class="ch-8 txt-color-2 fb-b">
+                                            On Sale
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-2">
+                        <div class="card rounded-10">
+                            <img src="assets/img/property/web-property-03.jpg" class="card-img-top rounded-t-10" alt="...">
+                            <div class="card-body">
+                                <div class="card-title text-black ch-6">Bani Gala</div>
+
+                                <div class="d-flex bd-highlight border-1 border-top pt-2 ">
+                                    <div class="me-auto bd-highlight text-center">
+                                        <div>
+                                            <img src="assets/img/icons/index-icon-house-buy.svg" height="30px" width="30px"> <span class="ch-8 fb-b text-muted ">500+</span>
+                                        </div>
+                                        <div class="ch-8 txt-color-2 fb-b">
+                                            On Sale
+                                        </div>
+                                    </div>
+                                    <div class=" bd-highlight text-center">
+                                        <div>
+                                            <img src="assets/img/icons/index-icon-house-sell.svg" height="30px" width="30px"> <span class="ch-8 fb-b text-muted ">500+</span>
+                                        </div>
+                                        <div class="ch-8 txt-color-2 fb-b">
+                                            On Sale
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-2">
+                        <div class="card rounded-10">
+                            <img src="assets/img/property/web-property-04.jpg" class="card-img-top rounded-t-10" alt="...">
+                            <div class="card-body">
+                                <div class="card-title text-black ch-6">B-17</div>
+
+                                <div class="d-flex bd-highlight border-1 border-top pt-2 ">
+                                    <div class="me-auto bd-highlight text-center">
+                                        <div>
+                                            <img src="assets/img/icons/index-icon-house-buy.svg" height="30px" width="30px"> <span class="ch-8 fb-b text-muted ">500+</span>
+                                        </div>
+                                        <div class="ch-8 txt-color-2 fb-b">
+                                            On Sale
+                                        </div>
+                                    </div>
+                                    <div class=" bd-highlight text-center">
+                                        <div>
+                                            <img src="assets/img/icons/index-icon-house-sell.svg" height="30px" width="30px"> <span class="ch-8 fb-b text-muted ">500+</span>
+                                        </div>
+                                        <div class="ch-8 txt-color-2 fb-b">
+                                            On Sale
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+</section>
+<!-----------------------------/Section-------------------------------------->
+<!------------------------------Section-------------------------------------->
+<section class="mt-5 mb-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12 ">
+                <div class="ch-6 text-black fb-b">Investment Projects to put your money</div>
+
+                <div class="mt-3 section-tab-nav-1">
+                    <ul class="nav nav-pills mb-4" id="pills2-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="pills2-islamabad-tab" data-bs-toggle="pill" data-bs-target="#pills2-islamabad" type="button" role="tab" aria-controls="pills2-islamabad" aria-selected="true">ISLAMABAD</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills2-rawalpindi-tab" data-bs-toggle="pill" data-bs-target="#pills2-rawalpindi" type="button" role="tab" aria-controls="pills2-rawalpindi" aria-selected="false">RAWALPINDI</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills2-lahore-tab" data-bs-toggle="pill" data-bs-target="#pills2-lahore" type="button" role="tab" aria-controls="pills2-lahore" aria-selected="false">LAHORE</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills2-karachi-tab" data-bs-toggle="pill" data-bs-target="#pills2-karachi" type="button" role="tab" aria-controls="pills2-karachi" aria-selected="false">KARACHI</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills2-peshawar-tab" data-bs-toggle="pill" data-bs-target="#pills2-peshawar" type="button" role="tab" aria-controls="pills2-peshawar" aria-selected="false">PESHAWAR</button>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="p-2 border-bottom border-1 border-top ">
+                    <div class="d-flex flex-row bd-highlight">
+                        <div class="p-2 bd-highlight">
+                            <div>
+                                <img src="assets/img/icons/index-icon-house-sell.svg"> <span class="ch-6 text-black ">For Sale:</span><span class="ch-6 txt-color-2">1000+</span>
+                            </div>
+                        </div>
+                        <div class="pt-2 ps-5 bd-highlight">
+                            <div>
+                                <img src="assets/img/icons/index-icon-house-buy.svg"> <span class="ch-6 text-black ">For Buy:</span><span class="ch-6 txt-color-2">1000+</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="product-home-slider mt-4 mb-4">
+
+                    <div class="p-2">
+                        <div class="card rounded-10">
+                            <div class="position-relative">
+                                <img src="assets/img/property/web-property-01.jpg" class="card-img-top rounded-t-10" alt="...">
+                                <div class="tag-1 start-0 position-absolute">MEGA</div>
+
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex bd-highlight">
+                                    <div class="me-auto  bd-highlight">
+                                        <div class="ch-8 text-muted fb-b">Islamabad</div>
+                                    </div>
+                                    <div class=" bd-highlight">
+                                        <div class="ch-8 txt-color-2 fb-b">PKR 79.13 lac - 2.12 cr</div>
+                                    </div>
+                                </div>
+                                <div class="card-title text-black ch-7 fb-b">Imarat Residences</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-2">
+                        <div class="card rounded-10">
+                            <div class="position-relative">
+                                <img src="assets/img/property/web-property-02.jpg" class="card-img-top rounded-t-10" alt="...">
+                                <div class="tag-1 start-0 position-absolute">MEGA</div>
+
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex bd-highlight">
+                                    <div class="me-auto  bd-highlight">
+                                        <div class="ch-8 text-muted fb-b">Islamabad</div>
+                                    </div>
+                                    <div class=" bd-highlight">
+                                        <div class="ch-8 txt-color-2 fb-b">PKR 79.13 lac - 2.12 cr</div>
+                                    </div>
+                                </div>
+                                <div class="card-title text-black ch-7 fb-b">Imarat Residences</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-2">
+                        <div class="card rounded-10">
+                            <div class="position-relative">
+                                <img src="assets/img/property/web-property-03.jpg" class="card-img-top rounded-t-10" alt="...">
+                                <div class="tag-1 start-0 position-absolute">MEGA</div>
+
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex bd-highlight">
+                                    <div class="me-auto  bd-highlight">
+                                        <div class="ch-8 text-muted fb-b">Islamabad</div>
+                                    </div>
+                                    <div class=" bd-highlight">
+                                        <div class="ch-8 txt-color-2 fb-b">PKR 79.13 lac - 2.12 cr</div>
+                                    </div>
+                                </div>
+                                <div class="card-title text-black ch-7 fb-b">Imarat Residences</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-2">
+                        <div class="card rounded-10">
+                            <div class="position-relative">
+                                <img src="assets/img/property/web-property-04.jpg" class="card-img-top rounded-t-10" alt="...">
+                                <div class="tag-1 start-0 position-absolute">MEGA</div>
+
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex bd-highlight">
+                                    <div class="me-auto  bd-highlight">
+                                        <div class="ch-8 text-muted fb-b">Islamabad</div>
+                                    </div>
+                                    <div class=" bd-highlight">
+                                        <div class="ch-8 txt-color-2 fb-b">PKR 79.13 lac - 2.12 cr</div>
+                                    </div>
+                                </div>
+                                <div class="card-title text-black ch-7 fb-b">Imarat Residences</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-2">
+                        <div class="card rounded-10">
+                            <div class="position-relative">
+                                <img src="assets/img/property/web-property-01.jpg" class="card-img-top rounded-t-10" alt="...">
+                                <div class="tag-1 start-0 position-absolute">MEGA</div>
+
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex bd-highlight">
+                                    <div class="me-auto  bd-highlight">
+                                        <div class="ch-8 text-muted fb-b">Islamabad</div>
+                                    </div>
+                                    <div class=" bd-highlight">
+                                        <div class="ch-8 txt-color-2 fb-b">PKR 79.13 lac - 2.12 cr</div>
+                                    </div>
+                                </div>
+                                <div class="card-title text-black ch-7 fb-b">Imarat Residences</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-2">
+                        <div class="card rounded-10">
+                            <div class="position-relative">
+                                <img src="assets/img/property/web-property-02.jpg" class="card-img-top rounded-t-10" alt="...">
+                                <div class="tag-1 start-0 position-absolute">MEGA</div>
+
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex bd-highlight">
+                                    <div class="me-auto  bd-highlight">
+                                        <div class="ch-8 text-muted fb-b">Islamabad</div>
+                                    </div>
+                                    <div class=" bd-highlight">
+                                        <div class="ch-8 txt-color-2 fb-b">PKR 79.13 lac - 2.12 cr</div>
+                                    </div>
+                                </div>
+                                <div class="card-title text-black ch-7 fb-b">Imarat Residences</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-2">
+                        <div class="card rounded-10">
+                            <div class="position-relative">
+                                <img src="assets/img/property/web-property-03.jpg" class="card-img-top rounded-t-10" alt="...">
+                                <div class="tag-1 start-0 position-absolute">MEGA</div>
+
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex bd-highlight">
+                                    <div class="me-auto  bd-highlight">
+                                        <div class="ch-8 text-muted fb-b">Islamabad</div>
+                                    </div>
+                                    <div class=" bd-highlight">
+                                        <div class="ch-8 txt-color-2 fb-b">PKR 79.13 lac - 2.12 cr</div>
+                                    </div>
+                                </div>
+                                <div class="card-title text-black ch-7 fb-b">Imarat Residences</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-2">
+                        <div class="card rounded-10">
+                            <div class="position-relative">
+                                <img src="assets/img/property/web-property-04.jpg" class="card-img-top rounded-t-10" alt="...">
+                                <div class="tag-1 start-0 position-absolute">MEGA</div>
+
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex bd-highlight">
+                                    <div class="me-auto  bd-highlight">
+                                        <div class="ch-8 text-muted fb-b">Islamabad</div>
+                                    </div>
+                                    <div class=" bd-highlight">
+                                        <div class="ch-8 txt-color-2 fb-b">PKR 79.13 lac - 2.12 cr</div>
+                                    </div>
+                                </div>
+                                <div class="card-title text-black ch-7 fb-b">Imarat Residences</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+</section>
+<!-----------------------------/Section-------------------------------------->
+<!------------------------------Section-------------------------------------->
+<section class="mt-5 mb-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12 ">
+                <div class="ch-6 text-black fb-b">Recent Properties for Sale</div>
+
+                <div class="mt-3 section-tab-nav-1">
+                    <ul class="nav nav-pills mb-4" id="pills3-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="pills3-islamabad-tab" data-bs-toggle="pill" data-bs-target="#pills3-islamabad" type="button" role="tab" aria-controls="pills3-islamabad" aria-selected="true">ISLAMABAD</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills3-rawalpindi-tab" data-bs-toggle="pill" data-bs-target="#pills3-rawalpindi" type="button" role="tab" aria-controls="pills3-rawalpindi" aria-selected="false">RAWALPINDI</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills3-lahore-tab" data-bs-toggle="pill" data-bs-target="#pills3-lahore" type="button" role="tab" aria-controls="pills3-lahore" aria-selected="false">LAHORE</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills3-karachi-tab" data-bs-toggle="pill" data-bs-target="#pills3-karachi" type="button" role="tab" aria-controls="pills3-karachi" aria-selected="false">KARACHI</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills3-peshawar-tab" data-bs-toggle="pill" data-bs-target="#pills3-peshawar" type="button" role="tab" aria-controls="pills3-peshawar" aria-selected="false">PESHAWAR</button>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="p-2 border-bottom border-1 border-top ">
+                    <div class="d-flex flex-row bd-highlight">
+                        <div class="p-2 bd-highlight">
+                            <div>
+                                <img src="assets/img/icons/index-icon-house-sell.svg"> <span class="ch-6 text-black ">For Sale:</span><span class="ch-6 txt-color-2">1000+</span>
+                            </div>
+                        </div>
+                        <div class="pt-2 ps-5 bd-highlight">
+                            <div>
+                                <img src="assets/img/icons/index-icon-house-buy.svg"> <span class="ch-6 text-black ">For Buy:</span><span class="ch-6 txt-color-2">1000+</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="product-home-slider mt-4 mb-4">
+
+                    <div class="p-2">
+                        <div class="card rounded-10">
+                            <img src="assets/img/property/web-property-01.jpg" class="card-img-top rounded-t-10" alt="...">
+                            <div class="card-body">
+                                <div class="card-title text-black ch-6">E-11</div>
+
+                                <div class="d-flex bd-highlight border-1 border-top pt-2 ">
+                                    <div class="me-auto bd-highlight text-center">
+                                        <div>
+                                            <img src="assets/img/icons/index-icon-house-buy.svg" height="30px" width="30px"> <span class="ch-8 fb-b text-muted ">500+</span>
+                                        </div>
+                                        <div class="ch-8 txt-color-2 fb-b">
+                                            On Sale
+                                        </div>
+                                    </div>
+                                    <div class=" bd-highlight text-center">
+                                        <div>
+                                            <img src="assets/img/icons/index-icon-house-sell.svg" height="30px" width="30px"> <span class="ch-8 fb-b text-muted ">500+</span>
+                                        </div>
+                                        <div class="ch-8 txt-color-2 fb-b">
+                                            On Sale
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-2">
+                        <div class="card rounded-10">
+                            <img src="assets/img/property/web-property-02.jpg" class="card-img-top rounded-t-10" alt="...">
+                            <div class="card-body">
+                                <div class="card-title text-black ch-6">G-13</div>
+
+                                <div class="d-flex bd-highlight border-1 border-top pt-2 ">
+                                    <div class="me-auto bd-highlight text-center">
+                                        <div>
+                                            <img src="assets/img/icons/index-icon-house-buy.svg" height="30px" width="30px"> <span class="ch-8 fb-b text-muted ">500+</span>
+                                        </div>
+                                        <div class="ch-8 txt-color-2 fb-b">
+                                            On Sale
+                                        </div>
+                                    </div>
+                                    <div class=" bd-highlight text-center">
+                                        <div>
+                                            <img src="assets/img/icons/index-icon-house-sell.svg" height="30px" width="30px"> <span class="ch-8 fb-b text-muted ">500+</span>
+                                        </div>
+                                        <div class="ch-8 txt-color-2 fb-b">
+                                            On Sale
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-2">
+                        <div class="card rounded-10">
+                            <img src="assets/img/property/web-property-03.jpg" class="card-img-top rounded-t-10" alt="...">
+                            <div class="card-body">
+                                <div class="card-title text-black ch-6">Bani Gala</div>
+
+                                <div class="d-flex bd-highlight border-1 border-top pt-2 ">
+                                    <div class="me-auto bd-highlight text-center">
+                                        <div>
+                                            <img src="assets/img/icons/index-icon-house-buy.svg" height="30px" width="30px"> <span class="ch-8 fb-b text-muted ">500+</span>
+                                        </div>
+                                        <div class="ch-8 txt-color-2 fb-b">
+                                            On Sale
+                                        </div>
+                                    </div>
+                                    <div class=" bd-highlight text-center">
+                                        <div>
+                                            <img src="assets/img/icons/index-icon-house-sell.svg" height="30px" width="30px"> <span class="ch-8 fb-b text-muted ">500+</span>
+                                        </div>
+                                        <div class="ch-8 txt-color-2 fb-b">
+                                            On Sale
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-2">
+                        <div class="card rounded-10">
+                            <img src="assets/img/property/web-property-04.jpg" class="card-img-top rounded-t-10" alt="...">
+                            <div class="card-body">
+                                <div class="card-title text-black ch-6">B-17</div>
+
+                                <div class="d-flex bd-highlight border-1 border-top pt-2 ">
+                                    <div class="me-auto bd-highlight text-center">
+                                        <div>
+                                            <img src="assets/img/icons/index-icon-house-buy.svg" height="30px" width="30px"> <span class="ch-8 fb-b text-muted ">500+</span>
+                                        </div>
+                                        <div class="ch-8 txt-color-2 fb-b">
+                                            On Sale
+                                        </div>
+                                    </div>
+                                    <div class=" bd-highlight text-center">
+                                        <div>
+                                            <img src="assets/img/icons/index-icon-house-sell.svg" height="30px" width="30px"> <span class="ch-8 fb-b text-muted ">500+</span>
+                                        </div>
+                                        <div class="ch-8 txt-color-2 fb-b">
+                                            On Sale
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-2">
+                        <div class="card rounded-10">
+                            <img src="assets/img/property/web-property-01.jpg" class="card-img-top rounded-t-10" alt="...">
+                            <div class="card-body">
+                                <div class="card-title text-black ch-6">E-11</div>
+
+                                <div class="d-flex bd-highlight border-1 border-top pt-2 ">
+                                    <div class="me-auto bd-highlight text-center">
+                                        <div>
+                                            <img src="assets/img/icons/index-icon-house-buy.svg" height="30px" width="30px"> <span class="ch-8 fb-b text-muted ">500+</span>
+                                        </div>
+                                        <div class="ch-8 txt-color-2 fb-b">
+                                            On Sale
+                                        </div>
+                                    </div>
+                                    <div class=" bd-highlight text-center">
+                                        <div>
+                                            <img src="assets/img/icons/index-icon-house-sell.svg" height="30px" width="30px"> <span class="ch-8 fb-b text-muted ">500+</span>
+                                        </div>
+                                        <div class="ch-8 txt-color-2 fb-b">
+                                            On Sale
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-2">
+                        <div class="card rounded-10">
+                            <img src="assets/img/property/web-property-02.jpg" class="card-img-top rounded-t-10" alt="...">
+                            <div class="card-body">
+                                <div class="card-title text-black ch-6">G-13</div>
+
+                                <div class="d-flex bd-highlight border-1 border-top pt-2 ">
+                                    <div class="me-auto bd-highlight text-center">
+                                        <div>
+                                            <img src="assets/img/icons/index-icon-house-buy.svg" height="30px" width="30px"> <span class="ch-8 fb-b text-muted ">500+</span>
+                                        </div>
+                                        <div class="ch-8 txt-color-2 fb-b">
+                                            On Sale
+                                        </div>
+                                    </div>
+                                    <div class=" bd-highlight text-center">
+                                        <div>
+                                            <img src="assets/img/icons/index-icon-house-sell.svg" height="30px" width="30px"> <span class="ch-8 fb-b text-muted ">500+</span>
+                                        </div>
+                                        <div class="ch-8 txt-color-2 fb-b">
+                                            On Sale
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-2">
+                        <div class="card rounded-10">
+                            <img src="assets/img/property/web-property-03.jpg" class="card-img-top rounded-t-10" alt="...">
+                            <div class="card-body">
+                                <div class="card-title text-black ch-6">Bani Gala</div>
+
+                                <div class="d-flex bd-highlight border-1 border-top pt-2 ">
+                                    <div class="me-auto bd-highlight text-center">
+                                        <div>
+                                            <img src="assets/img/icons/index-icon-house-buy.svg" height="30px" width="30px"> <span class="ch-8 fb-b text-muted ">500+</span>
+                                        </div>
+                                        <div class="ch-8 txt-color-2 fb-b">
+                                            On Sale
+                                        </div>
+                                    </div>
+                                    <div class=" bd-highlight text-center">
+                                        <div>
+                                            <img src="assets/img/icons/index-icon-house-sell.svg" height="30px" width="30px"> <span class="ch-8 fb-b text-muted ">500+</span>
+                                        </div>
+                                        <div class="ch-8 txt-color-2 fb-b">
+                                            On Sale
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-2">
+                        <div class="card rounded-10">
+                            <img src="assets/img/property/web-property-04.jpg" class="card-img-top rounded-t-10" alt="...">
+                            <div class="card-body">
+                                <div class="card-title text-black ch-6">B-17</div>
+
+                                <div class="d-flex bd-highlight border-1 border-top pt-2 ">
+                                    <div class="me-auto bd-highlight text-center">
+                                        <div>
+                                            <img src="assets/img/icons/index-icon-house-buy.svg" height="30px" width="30px"> <span class="ch-8 fb-b text-muted ">500+</span>
+                                        </div>
+                                        <div class="ch-8 txt-color-2 fb-b">
+                                            On Sale
+                                        </div>
+                                    </div>
+                                    <div class=" bd-highlight text-center">
+                                        <div>
+                                            <img src="assets/img/icons/index-icon-house-sell.svg" height="30px" width="30px"> <span class="ch-8 fb-b text-muted ">500+</span>
+                                        </div>
+                                        <div class="ch-8 txt-color-2 fb-b">
+                                            On Sale
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+</section>
+<!-----------------------------/Section-------------------------------------->
+<!------------------------------Section-------------------------------------->
+<section class="mt-5 mb-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12 ">
+                <div class="ch-6 text-black fb-b">Recent Properties for Sale</div>
+
+                <div class="mt-3 section-tab-nav-1">
+                    <ul class="nav nav-pills mb-4" id="pills4-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="pills4-islamabad-tab" data-bs-toggle="pill" data-bs-target="#pills4-islamabad" type="button" role="tab" aria-controls="pills4-islamabad" aria-selected="true">ISLAMABAD</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills4-rawalpindi-tab" data-bs-toggle="pill" data-bs-target="#pills4-rawalpindi" type="button" role="tab" aria-controls="pills4-rawalpindi" aria-selected="false">RAWALPINDI</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills4-lahore-tab" data-bs-toggle="pill" data-bs-target="#pills4-lahore" type="button" role="tab" aria-controls="pills4-lahore" aria-selected="false">LAHORE</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills4-karachi-tab" data-bs-toggle="pill" data-bs-target="#pills4-karachi" type="button" role="tab" aria-controls="pills4-karachi" aria-selected="false">KARACHI</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills4-peshawar-tab" data-bs-toggle="pill" data-bs-target="#pills4-peshawar" type="button" role="tab" aria-controls="pills4-peshawar" aria-selected="false">PESHAWAR</button>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="p-2 border-bottom border-1 border-top ">
+                    <div class="d-flex flex-row bd-highlight">
+                        <div class="p-2 bd-highlight">
+                            <div>
+                                <img src="assets/img/icons/index-icon-house-sell.svg"> <span class="ch-6 text-black ">For Sale:</span><span class="ch-6 txt-color-2">1000+</span>
+                            </div>
+                        </div>
+                        <div class="pt-2 ps-5 bd-highlight">
+                            <div>
+                                <img src="assets/img/icons/index-icon-house-buy.svg"> <span class="ch-6 text-black ">For Buy:</span><span class="ch-6 txt-color-2">1000+</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="product-home-slider mt-4 mb-4">
+
+                    <div class="p-2">
+                        <div class="card rounded-10">
+                            <img src="assets/img/property/web-property-01.jpg" class="card-img-top rounded-t-10" alt="...">
+                            <div class="card-body">
+                                <div class="card-title text-black fb-b ch-7">1 Kanal House for Sale</div>
+                                <div class="card-title text-muted ch-9"><i class="fal fa-map-marker-alt txt-color-4"></i> Location: DHA Phase 2, Islamabad</div>
+                                <div class="card-title txt-color-2 fb-b ch-7 border-1 border-bottom pb-2">PKR 11 Cr</div>
+                                <div class="d-flex bd-highlight ">
+                                    <div class="p-2 bd-highlight">
+                                        <img src="assets/img/icons/page-icons/bed-light-blue.svg"><span class="ch-7 text-black"> 02</span>
+                                    </div>
+                                    <div class="p-2 bd-highlight">
+                                        <img src="assets/img/icons/page-icons/shawer-light-blue.svg"><span class="ch-7 text-black"> 02</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-2">
+                        <div class="card rounded-10">
+                            <img src="assets/img/property/web-property-02.jpg" class="card-img-top rounded-t-10" alt="...">
+                            <div class="card-body">
+                                <div class="card-title text-black fb-b ch-7">1 Kanal House for Sale</div>
+                                <div class="card-title text-muted ch-9"><i class="fal fa-map-marker-alt txt-color-4"></i> Location: DHA Phase 2, Islamabad</div>
+                                <div class="card-title txt-color-2 fb-b ch-7 border-1 border-bottom pb-2">PKR 11 Cr</div>
+                                <div class="d-flex bd-highlight ">
+                                    <div class="p-2 bd-highlight">
+                                        <img src="assets/img/icons/page-icons/bed-light-blue.svg"><span class="ch-7 text-black"> 02</span>
+                                    </div>
+                                    <div class="p-2 bd-highlight">
+                                        <img src="assets/img/icons/page-icons/shawer-light-blue.svg"><span class="ch-7 text-black"> 02</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-2">
+                        <div class="card rounded-10">
+                            <img src="assets/img/property/web-property-03.jpg" class="card-img-top rounded-t-10" alt="...">
+                            <div class="card-body">
+                                <div class="card-title text-black fb-b ch-7">1 Kanal House for Sale</div>
+                                <div class="card-title text-muted ch-9"><i class="fal fa-map-marker-alt txt-color-4"></i> Location: DHA Phase 2, Islamabad</div>
+                                <div class="card-title txt-color-2 fb-b ch-7 border-1 border-bottom pb-2">PKR 11 Cr</div>
+                                <div class="d-flex bd-highlight ">
+                                    <div class="p-2 bd-highlight">
+                                        <img src="assets/img/icons/page-icons/bed-light-blue.svg"><span class="ch-7 text-black"> 02</span>
+                                    </div>
+                                    <div class="p-2 bd-highlight">
+                                        <img src="assets/img/icons/page-icons/shawer-light-blue.svg"><span class="ch-7 text-black"> 02</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-2">
+                        <div class="card rounded-10">
+                            <img src="assets/img/property/web-property-04.jpg" class="card-img-top rounded-t-10" alt="...">
+                            <div class="card-body">
+                                <div class="card-title text-black fb-b ch-7">1 Kanal House for Sale</div>
+                                <div class="card-title text-muted ch-9"><i class="fal fa-map-marker-alt txt-color-4"></i> Location: DHA Phase 2, Islamabad</div>
+                                <div class="card-title txt-color-2 fb-b ch-7 border-1 border-bottom pb-2">PKR 11 Cr</div>
+                                <div class="d-flex bd-highlight ">
+                                    <div class="p-2 bd-highlight">
+                                        <img src="assets/img/icons/page-icons/bed-light-blue.svg"><span class="ch-7 text-black"> 02</span>
+                                    </div>
+                                    <div class="p-2 bd-highlight">
+                                        <img src="assets/img/icons/page-icons/shawer-light-blue.svg"><span class="ch-7 text-black"> 02</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-2">
+                        <div class="card rounded-10">
+                            <img src="assets/img/property/web-property-01.jpg" class="card-img-top rounded-t-10" alt="...">
+                            <div class="card-body">
+                                <div class="card-title text-black fb-b ch-7">1 Kanal House for Sale</div>
+                                <div class="card-title text-muted ch-9"><i class="fal fa-map-marker-alt txt-color-4"></i> Location: DHA Phase 2, Islamabad</div>
+                                <div class="card-title txt-color-2 fb-b ch-7 border-1 border-bottom pb-2">PKR 11 Cr</div>
+                                <div class="d-flex bd-highlight ">
+                                    <div class="p-2 bd-highlight">
+                                        <img src="assets/img/icons/page-icons/bed-light-blue.svg"><span class="ch-7 text-black"> 02</span>
+                                    </div>
+                                    <div class="p-2 bd-highlight">
+                                        <img src="assets/img/icons/page-icons/shawer-light-blue.svg"><span class="ch-7 text-black"> 02</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-2">
+                        <div class="card rounded-10">
+                            <img src="assets/img/property/web-property-02.jpg" class="card-img-top rounded-t-10" alt="...">
+                            <div class="card-body">
+                                <div class="card-title text-black fb-b ch-7">1 Kanal House for Sale</div>
+                                <div class="card-title text-muted ch-9"><i class="fal fa-map-marker-alt txt-color-4"></i> Location: DHA Phase 2, Islamabad</div>
+                                <div class="card-title txt-color-2 fb-b ch-7 border-1 border-bottom pb-2">PKR 11 Cr</div>
+                                <div class="d-flex bd-highlight ">
+                                    <div class="p-2 bd-highlight">
+                                        <img src="assets/img/icons/page-icons/bed-light-blue.svg"><span class="ch-7 text-black"> 02</span>
+                                    </div>
+                                    <div class="p-2 bd-highlight">
+                                        <img src="assets/img/icons/page-icons/shawer-light-blue.svg"><span class="ch-7 text-black"> 02</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-2">
+                        <div class="card rounded-10">
+                            <img src="assets/img/property/web-property-03.jpg" class="card-img-top rounded-t-10" alt="...">
+                            <div class="card-body">
+                                <div class="card-title text-black fb-b ch-7">1 Kanal House for Sale</div>
+                                <div class="card-title text-muted ch-9"><i class="fal fa-map-marker-alt txt-color-4"></i> Location: DHA Phase 2, Islamabad</div>
+                                <div class="card-title txt-color-2 fb-b ch-7 border-1 border-bottom pb-2">PKR 11 Cr</div>
+                                <div class="d-flex bd-highlight ">
+                                    <div class="p-2 bd-highlight">
+                                        <img src="assets/img/icons/page-icons/bed-light-blue.svg"><span class="ch-7 text-black"> 02</span>
+                                    </div>
+                                    <div class="p-2 bd-highlight">
+                                        <img src="assets/img/icons/page-icons/shawer-light-blue.svg"><span class="ch-7 text-black"> 02</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-2">
+                        <div class="card rounded-10">
+                            <img src="assets/img/property/web-property-04.jpg" class="card-img-top rounded-t-10" alt="...">
+                            <div class="card-body">
+                                <div class="card-title text-black fb-b ch-7">1 Kanal House for Sale</div>
+                                <div class="card-title text-muted ch-9"><i class="fal fa-map-marker-alt txt-color-4"></i> Location: DHA Phase 2, Islamabad</div>
+                                <div class="card-title txt-color-2 fb-b ch-7 border-1 border-bottom pb-2">PKR 11 Cr</div>
+                                <div class="d-flex bd-highlight ">
+                                    <div class="p-2 bd-highlight">
+                                        <img src="assets/img/icons/page-icons/bed-light-blue.svg"><span class="ch-7 text-black"> 02</span>
+                                    </div>
+                                    <div class="p-2 bd-highlight">
+                                        <img src="assets/img/icons/page-icons/shawer-light-blue.svg"><span class="ch-7 text-black"> 02</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+</section>
+<!-----------------------------/Section-------------------------------------->
+<!------------------------------Section-------------------------------------->
+<section class="mt-5 mb-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12 ">
+                <div class="ch-6 text-black fb-b">Recent Properties for Sale</div>
+
+                <div class="mt-3 section-tab-nav-1">
+                    <ul class="nav nav-pills mb-4" id="pills5-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="pills5-islamabad-tab" data-bs-toggle="pill" data-bs-target="#pills5-islamabad" type="button" role="tab" aria-controls="pills5-islamabad" aria-selected="true">ISLAMABAD</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills5-rawalpindi-tab" data-bs-toggle="pill" data-bs-target="#pills5-rawalpindi" type="button" role="tab" aria-controls="pills5-rawalpindi" aria-selected="false">RAWALPINDI</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills5-lahore-tab" data-bs-toggle="pill" data-bs-target="#pills5-lahore" type="button" role="tab" aria-controls="pills5-lahore" aria-selected="false">LAHORE</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills5-karachi-tab" data-bs-toggle="pill" data-bs-target="#pills5-karachi" type="button" role="tab" aria-controls="pills5-karachi" aria-selected="false">KARACHI</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills5-peshawar-tab" data-bs-toggle="pill" data-bs-target="#pills5-peshawar" type="button" role="tab" aria-controls="pills5-peshawar" aria-selected="false">PESHAWAR</button>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="p-2 border-bottom border-1 border-top ">
+                    <div class="d-flex flex-row bd-highlight">
+                        <div class="p-2 bd-highlight">
+                            <div>
+                                <img src="assets/img/icons/index-icon-house-sell.svg"> <span class="ch-6 text-black ">For Sale:</span><span class="ch-6 txt-color-2">1000+</span>
+                            </div>
+                        </div>
+                        <div class="pt-2 ps-5 bd-highlight">
+                            <div>
+                                <img src="assets/img/icons/index-icon-house-buy.svg"> <span class="ch-6 text-black ">For Buy:</span><span class="ch-6 txt-color-2">1000+</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="product-home-slider mt-4 mb-4">
+
+                    <div class="p-2">
+                        <div class="card rounded-10">
+                            <img src="assets/img/property/web-property-01.jpg" class="card-img-top rounded-t-10" alt="...">
+                            <div class="card-body">
+                                <div class="card-title text-black fb-b ch-7">1 Kanal House for Sale</div>
+                                <div class="card-title text-muted ch-9"><i class="fal fa-map-marker-alt txt-color-4"></i> Location: DHA Phase 2, Islamabad</div>
+                                <div class="card-title txt-color-2 fb-b ch-7 border-1 border-bottom pb-2">PKR 11 Cr</div>
+                                <div class="d-flex bd-highlight ">
+                                    <div class="p-2 bd-highlight">
+                                        <img src="assets/img/icons/page-icons/bed-light-blue.svg"><span class="ch-7 text-black"> 02</span>
+                                    </div>
+                                    <div class="p-2 bd-highlight">
+                                        <img src="assets/img/icons/page-icons/shawer-light-blue.svg"><span class="ch-7 text-black"> 02</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-2">
+                        <div class="card rounded-10">
+                            <img src="assets/img/property/web-property-02.jpg" class="card-img-top rounded-t-10" alt="...">
+                            <div class="card-body">
+                                <div class="card-title text-black fb-b ch-7">1 Kanal House for Sale</div>
+                                <div class="card-title text-muted ch-9"><i class="fal fa-map-marker-alt txt-color-4"></i> Location: DHA Phase 2, Islamabad</div>
+                                <div class="card-title txt-color-2 fb-b ch-7 border-1 border-bottom pb-2">PKR 11 Cr</div>
+                                <div class="d-flex bd-highlight ">
+                                    <div class="p-2 bd-highlight">
+                                        <img src="assets/img/icons/page-icons/bed-light-blue.svg"><span class="ch-7 text-black"> 02</span>
+                                    </div>
+                                    <div class="p-2 bd-highlight">
+                                        <img src="assets/img/icons/page-icons/shawer-light-blue.svg"><span class="ch-7 text-black"> 02</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-2">
+                        <div class="card rounded-10">
+                            <img src="assets/img/property/web-property-03.jpg" class="card-img-top rounded-t-10" alt="...">
+                            <div class="card-body">
+                                <div class="card-title text-black fb-b ch-7">1 Kanal House for Sale</div>
+                                <div class="card-title text-muted ch-9"><i class="fal fa-map-marker-alt txt-color-4"></i> Location: DHA Phase 2, Islamabad</div>
+                                <div class="card-title txt-color-2 fb-b ch-7 border-1 border-bottom pb-2">PKR 11 Cr</div>
+                                <div class="d-flex bd-highlight ">
+                                    <div class="p-2 bd-highlight">
+                                        <img src="assets/img/icons/page-icons/bed-light-blue.svg"><span class="ch-7 text-black"> 02</span>
+                                    </div>
+                                    <div class="p-2 bd-highlight">
+                                        <img src="assets/img/icons/page-icons/shawer-light-blue.svg"><span class="ch-7 text-black"> 02</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-2">
+                        <div class="card rounded-10">
+                            <img src="assets/img/property/web-property-04.jpg" class="card-img-top rounded-t-10" alt="...">
+                            <div class="card-body">
+                                <div class="card-title text-black fb-b ch-7">1 Kanal House for Sale</div>
+                                <div class="card-title text-muted ch-9"><i class="fal fa-map-marker-alt txt-color-4"></i> Location: DHA Phase 2, Islamabad</div>
+                                <div class="card-title txt-color-2 fb-b ch-7 border-1 border-bottom pb-2">PKR 11 Cr</div>
+                                <div class="d-flex bd-highlight ">
+                                    <div class="p-2 bd-highlight">
+                                        <img src="assets/img/icons/page-icons/bed-light-blue.svg"><span class="ch-7 text-black"> 02</span>
+                                    </div>
+                                    <div class="p-2 bd-highlight">
+                                        <img src="assets/img/icons/page-icons/shawer-light-blue.svg"><span class="ch-7 text-black"> 02</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-2">
+                        <div class="card rounded-10">
+                            <img src="assets/img/property/web-property-01.jpg" class="card-img-top rounded-t-10" alt="...">
+                            <div class="card-body">
+                                <div class="card-title text-black fb-b ch-7">1 Kanal House for Sale</div>
+                                <div class="card-title text-muted ch-9"><i class="fal fa-map-marker-alt txt-color-4"></i> Location: DHA Phase 2, Islamabad</div>
+                                <div class="card-title txt-color-2 fb-b ch-7 border-1 border-bottom pb-2">PKR 11 Cr</div>
+                                <div class="d-flex bd-highlight ">
+                                    <div class="p-2 bd-highlight">
+                                        <img src="assets/img/icons/page-icons/bed-light-blue.svg"><span class="ch-7 text-black"> 02</span>
+                                    </div>
+                                    <div class="p-2 bd-highlight">
+                                        <img src="assets/img/icons/page-icons/shawer-light-blue.svg"><span class="ch-7 text-black"> 02</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-2">
+                        <div class="card rounded-10">
+                            <img src="assets/img/property/web-property-02.jpg" class="card-img-top rounded-t-10" alt="...">
+                            <div class="card-body">
+                                <div class="card-title text-black fb-b ch-7">1 Kanal House for Sale</div>
+                                <div class="card-title text-muted ch-9"><i class="fal fa-map-marker-alt txt-color-4"></i> Location: DHA Phase 2, Islamabad</div>
+                                <div class="card-title txt-color-2 fb-b ch-7 border-1 border-bottom pb-2">PKR 11 Cr</div>
+                                <div class="d-flex bd-highlight ">
+                                    <div class="p-2 bd-highlight">
+                                        <img src="assets/img/icons/page-icons/bed-light-blue.svg"><span class="ch-7 text-black"> 02</span>
+                                    </div>
+                                    <div class="p-2 bd-highlight">
+                                        <img src="assets/img/icons/page-icons/shawer-light-blue.svg"><span class="ch-7 text-black"> 02</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-2">
+                        <div class="card rounded-10">
+                            <img src="assets/img/property/web-property-03.jpg" class="card-img-top rounded-t-10" alt="...">
+                            <div class="card-body">
+                                <div class="card-title text-black fb-b ch-7">1 Kanal House for Sale</div>
+                                <div class="card-title text-muted ch-9"><i class="fal fa-map-marker-alt txt-color-4"></i> Location: DHA Phase 2, Islamabad</div>
+                                <div class="card-title txt-color-2 fb-b ch-7 border-1 border-bottom pb-2">PKR 11 Cr</div>
+                                <div class="d-flex bd-highlight ">
+                                    <div class="p-2 bd-highlight">
+                                        <img src="assets/img/icons/page-icons/bed-light-blue.svg"><span class="ch-7 text-black"> 02</span>
+                                    </div>
+                                    <div class="p-2 bd-highlight">
+                                        <img src="assets/img/icons/page-icons/shawer-light-blue.svg"><span class="ch-7 text-black"> 02</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-2">
+                        <div class="card rounded-10">
+                            <img src="assets/img/property/web-property-04.jpg" class="card-img-top rounded-t-10" alt="...">
+                            <div class="card-body">
+                                <div class="card-title text-black fb-b ch-7">1 Kanal House for Sale</div>
+                                <div class="card-title text-muted ch-9"><i class="fal fa-map-marker-alt txt-color-4"></i> Location: DHA Phase 2, Islamabad</div>
+                                <div class="card-title txt-color-2 fb-b ch-7 border-1 border-bottom pb-2">PKR 11 Cr</div>
+                                <div class="d-flex bd-highlight ">
+                                    <div class="p-2 bd-highlight">
+                                        <img src="assets/img/icons/page-icons/bed-light-blue.svg"><span class="ch-7 text-black"> 02</span>
+                                    </div>
+                                    <div class="p-2 bd-highlight">
+                                        <img src="assets/img/icons/page-icons/shawer-light-blue.svg"><span class="ch-7 text-black"> 02</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+</section>
+<!-----------------------------/Section-------------------------------------->
+<!------------------------------Section-------------------------------------->
+<section class="pt-5 pb-5 background-2">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12 mt-5 mb-5">
+                <div class="ch-5 text-white fb-b mt-5">
+                    We have a buyer for every property
+                </div>
+                <div class="ch-7 text-white mt-1 mb-3">
+                    List your properties and sell to more than 2 million buyers that visit graana.com every month
+                </div>
+                <button class="cus-btn-2 btn mt-2 mb-2 p-2 ch-7 rounded-3">
+                    TRY SELLING
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+<!-----------------------------/Section-------------------------------------->
+<!------------------------------Section-------------------------------------->
+<section class="mt-3 mb-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12 ">
+                <div class="ch-6 text-black fb-b">OnProperty Events</div>
+                <div class="ch-7 text-muted">Explore amenities and things to do in your local area</div>
+
+
+
+                <div class="product-home-slider mt-4 mb-4">
+
+                    <div class="p-2">
+                        <div class="position-relative">
+                            <img src="assets/img/event/event-01.jpg" class="w-100 rounded-10" alt="...">
+                            <div class="h-100 w-100 opa-black position-absolute top-0 rounded-10 start-0">
+                                <div class="bottom-0 start-0 position-absolute p-2">
+                                    <div class="text-white fb-b ch-7">
+                                        Islamabad Open House
+                                    </div>
+                                    <div class="text-white ch-8">
+                                        June 11, 2022 11:00 am
+                                    </div>
+                                    <div class="text-white ch-8">
+                                        Amazon Mall
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-2">
+                        <div class="position-relative">
+                            <img src="assets/img/event/event-02.jpg" class="w-100 rounded-10" alt="...">
+                            <div class="h-100 w-100 opa-black position-absolute top-0 rounded-10 start-0">
+                                <div class="bottom-0 start-0 position-absolute p-2">
+                                    <div class="text-white fb-b ch-7">
+                                        Pakistan Lifestyle Furniture...
+                                    </div>
+                                    <div class="text-white ch-8">
+                                        June 11, 2022 11:00 am
+                                    </div>
+                                    <div class="text-white ch-8">
+                                        Amazon Mall
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-2">
+                        <div class="position-relative">
+                            <img src="assets/img/event/event-03.jpg" class="w-100 rounded-10" alt="...">
+                            <div class="h-100 w-100 opa-black position-absolute top-0 rounded-10 start-0">
+                                <div class="bottom-0 start-0 position-absolute p-2">
+                                    <div class="text-white fb-b ch-7">
+                                        Islamabad Open House
+                                    </div>
+                                    <div class="text-white ch-8">
+                                        June 11, 2022 11:00 am
+                                    </div>
+                                    <div class="text-white ch-8">
+                                        Amazon Mall
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-2">
+                        <div class="position-relative">
+                            <img src="assets/img/event/event-04.jpg" class="w-100 rounded-10" alt="...">
+                            <div class="h-100 w-100 opa-black position-absolute top-0 rounded-10 start-0">
+                                <div class="bottom-0 start-0 position-absolute p-2">
+                                    <div class="text-white fb-b ch-7">
+                                        Pakistan Lifestyle Furniture...
+                                    </div>
+                                    <div class="text-white ch-8">
+                                        June 11, 2022 11:00 am
+                                    </div>
+                                    <div class="text-white ch-8">
+                                        Amazon Mall
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-2">
+                        <div class="position-relative">
+                            <img src="assets/img/event/event-01.jpg" class="w-100 rounded-10" alt="...">
+                            <div class="h-100 w-100 opa-black position-absolute top-0 rounded-10 start-0">
+                                <div class="bottom-0 start-0 position-absolute p-2">
+                                    <div class="text-white fb-b ch-7">
+                                        Islamabad Open House
+                                    </div>
+                                    <div class="text-white ch-8">
+                                        June 11, 2022 11:00 am
+                                    </div>
+                                    <div class="text-white ch-8">
+                                        Amazon Mall
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-2">
+                        <div class="position-relative">
+                            <img src="assets/img/event/event-02.jpg" class="w-100 rounded-10" alt="...">
+                            <div class="h-100 w-100 opa-black position-absolute top-0 rounded-10 start-0">
+                                <div class="bottom-0 start-0 position-absolute p-2">
+                                    <div class="text-white fb-b ch-7">
+                                        Pakistan Lifestyle Furniture...
+                                    </div>
+                                    <div class="text-white ch-8">
+                                        June 11, 2022 11:00 am
+                                    </div>
+                                    <div class="text-white ch-8">
+                                        Amazon Mall
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-2">
+                        <div class="position-relative">
+                            <img src="assets/img/event/event-03.jpg" class="w-100 rounded-10" alt="...">
+                            <div class="h-100 w-100 opa-black position-absolute top-0 rounded-10 start-0">
+                                <div class="bottom-0 start-0 position-absolute p-2">
+                                    <div class="text-white fb-b ch-7">
+                                        Islamabad Open House
+                                    </div>
+                                    <div class="text-white ch-8">
+                                        June 11, 2022 11:00 am
+                                    </div>
+                                    <div class="text-white ch-8">
+                                        Amazon Mall
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-2">
+                        <div class="position-relative">
+                            <img src="assets/img/event/event-04.jpg" class="w-100 rounded-10" alt="...">
+                            <div class="h-100 w-100 opa-black position-absolute top-0 rounded-10 start-0">
+                                <div class="bottom-0 start-0 position-absolute p-2">
+                                    <div class="text-white fb-b ch-7">
+                                        Pakistan Lifestyle Furniture...
+                                    </div>
+                                    <div class="text-white ch-8">
+                                        June 11, 2022 11:00 am
+                                    </div>
+                                    <div class="text-white ch-8">
+                                        Amazon Mall
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+</section>
+<!-----------------------------/Section-------------------------------------->
+<!------------------------------Section-------------------------------------->
+<section class="pt-5 pb-5 background-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12 mt-5 ">
+                <div class="ch-5 text-black fb-b mt-5">
+                    There's more to experience in the app
+                </div>
+                <div class="ch-7 text-black mt-1 mb-3">
+                    Download the App on App Store, Play Store & App Gallery.
+                </div>
+                <div class="d-flex bd-highlight">
+                    <div class=" bd-highlight">
+                        <img src="assets/img/play-button.svg"  width="150px">
+                    </div>
+                    <div class=" bd-highlight">
+                        <img src="assets/img/app-button.svg"  width="150px">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-----------------------------/Section-------------------------------------->
+<!------------------------------Section-------------------------------------->
+<section class="pt-3 pb-5 footer-nav">
+    <div class="container">
+        <div class="row border-bottom border-1">
+            <div class="col-sm-12 col-md-12 col-lg-12 mt-5 ">
+                <div class="ch-6 text-black ">
+                    Looking for popular cities to get properties in?
+                </div>
+                <div class="ch-8 text-muted ">
+                    Here's a list of houses flats plots and rooms in all bustling metropolitan cities.
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-3 col-lg-3 mb-3 mt-3">
+                <div class="d-flex flex-column bd-highlight">
+                    <div class=" bd-highlight">
+                        <div class="ch-7 text-black fb-b">
+                            Homes
+                        </div>
+                    </div>
+                    <div class=" bd-highlight">
+                        <ul>
+                            <li><a href="">House for sale in Islamabad</a></li>
+                            <li><a href="">House for sale in Rawalpindi</a></li>
+                            <li><a href="">House for sale in Lahore</a></li>
+                            <li><a href="">House for sale in Karachi</a></li>
+                            <li><a href="">House for sale in Peshawar</a></li>
+                            <li><a href="">House for sale in Faisalabad</a></li>
+                            <li><a href="">House for sale in Multan</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-3 col-lg-3 mb-3 mt-3 ">
+                <div class="d-flex flex-column bd-highlight">
+                    <div class=" bd-highlight">
+                        <div class="ch-7 text-black fb-b">
+                            Flats & Apartments
+                        </div>
+                    </div>
+                    <div class=" bd-highlight">
+                        <ul>
+                            <li><a href="">House for sale in Islamabad</a></li>
+                            <li><a href="">House for sale in Rawalpindi</a></li>
+                            <li><a href="">House for sale in Lahore</a></li>
+                            <li><a href="">House for sale in Karachi</a></li>
+                            <li><a href="">House for sale in Peshawar</a></li>
+                            <li><a href="">House for sale in Faisalabad</a></li>
+                            <li><a href="">House for sale in Multan</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-3 col-lg-3 mb-3 mt-3 ">
+                <div class="d-flex flex-column bd-highlight">
+                    <div class=" bd-highlight">
+                        <div class="ch-7 text-black fb-b">
+                            Plots
+                        </div>
+                    </div>
+                    <div class=" bd-highlight">
+                        <ul>
+                            <li><a href="">Plots for sale in Islamabad</a></li>
+                            <li><a href="">Plots for sale in Rawalpindi</a></li>
+                            <li><a href="">Plots for sale in Lahore</a></li>
+                            <li><a href="">Plots for sale in Karachi</a></li>
+                            <li><a href="">Plots for sale in Peshawar</a></li>
+                            <li><a href="">Plots for sale in Faisalabad</a></li>
+                            <li><a href="">Plots for sale in Multan</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-3 col-lg-3 mb-3 mt-3 ">
+                <div class="d-flex flex-column bd-highlight">
+                    <div class=" bd-highlight">
+                        <div class="ch-7 text-black fb-b">
+                            Rooms
+                        </div>
+                    </div>
+                    <div class=" bd-highlight">
+                        <ul>
+                            <li><a href="">Rooms for rent in Islamabad</a></li>
+                            <li><a href="">Rooms for rent in Rawalpindi</a></li>
+                            <li><a href="">Rooms for rent in Lahore</a></li>
+                            <li><a href="">Rooms for rent in Karachi</a></li>
+                            <li><a href="">Rooms for rent in Peshawar</a></li>
+                            <li><a href="">Rooms for rent in Faisalabad</a></li>
+                            <li><a href="">Rooms for rent in Multan</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row border-bottom border-1">
+            <div class="col-sm-12 col-md-12 col-lg-12 mt-5 ">
+                <div class="ch-6 text-black ">
+                    Looking for options of your next home?
+                </div>
+                <div class="ch-8 text-muted ">
+                    Here's the list of popular locations in our top cities.
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-3 col-lg-3 mb-3 mt-3">
+                <div class="d-flex flex-column bd-highlight">
+                    <div class=" bd-highlight">
+                        <div class="ch-7 text-black fb-b">
+                            Islamabad
+                        </div>
+                    </div>
+                    <div class=" bd-highlight">
+                        <ul>
+                            <li><a href="">G-13 Islamabad</a></li>
+                            <li><a href="">DHA Islamabad Islamabad</a></li>
+                            <li><a href="">DHA Phase 2 Islamabad</a></li>
+                            <li><a href="">Bahria Town Islamabad</a></li>
+                            <li><a href="">I-8 Islamabad</a></li>
+                            <li><a href="">G-13/1 Islamabad</a></li>
+                            <li><a href="">Soan Garden Islamabad</a></li>
+                        </ul>
+                        <a href="" class="ch-9 txt-color-2">View All Areas in Islamabad</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-3 col-lg-3 mb-3 mt-3 ">
+                <div class="d-flex flex-column bd-highlight">
+                    <div class=" bd-highlight">
+                        <div class="ch-7 text-black fb-b">
+                            Rawalpindi
+                        </div>
+                    </div>
+                    <div class=" bd-highlight">
+                        <ul>
+                            <li><a href="">Bahria Town Phase 8 Rawalpindi</a></li>
+                            <li><a href="">Adyala Road Rawalpindi</a></li>
+                            <li><a href="">Airport Housing Society Rawalpindi</a></li>
+                            <li><a href="">Bahria Town Phase 8, Block Usman Rawalpindi</a></li>
+                            <li><a href="">Airport Housing Society, Sector 4 Rawalpindi</a></li>
+                            <li><a href="">Bahria Town Phase 8, Block Ali Rawalpindi</a></li>
+                            <li><a href="">Bahria Town Phase 8, Abu Bakar Block Rawalpindi</a></li>
+                        </ul>
+                        <a href="" class="ch-9 txt-color-2">View All Areas in Rawalpindi</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-3 col-lg-3 mb-3 mt-3 ">
+                <div class="d-flex flex-column bd-highlight">
+                    <div class=" bd-highlight">
+                        <div class="ch-7 text-black fb-b">
+                            Lahore
+                        </div>
+                    </div>
+                    <div class=" bd-highlight">
+                        <ul>
+                            <li><a href="">DHA Lahore Lahore</a></li>
+                            <li><a href="">Bahria Town Lahore</a></li>
+                            <li><a href="">Multan Road Lahore</a></li>
+                            <li><a href="">Al Rehman Garden Lahore</a></li>
+                            <li><a href="">Al Rehman Garden Phase 2 Lahore</a></li>
+                            <li><a href="">Ferozepur Road Lahore</a></li>
+                            <li><a href="">Lake City Lahore</a></li>
+                        </ul>
+                        <a href="" class="ch-9 txt-color-2">View All Areas in Lahore</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-3 col-lg-3 mb-3 mt-3 ">
+                <div class="d-flex flex-column bd-highlight">
+                    <div class=" bd-highlight">
+                        <div class="ch-7 text-black fb-b">
+                            Rooms
+                        </div>
+                    </div>
+                    <div class=" bd-highlight">
+                        <ul>
+                            <li><a href="">DHA Karachi</a></li>
+                            <li><a href="">Bahria Town Karachi Karachi</a></li>
+                            <li><a href="">Scheme 33 Karachi</a></li>
+                            <li><a href="">North Karachi Township Karachi</a></li>
+                            <li><a href="">Gulistan-e-Jauhar Karachi</a></li>
+                            <li><a href="">Gulshan-e-Maymar Karachi</a></li>
+                            <li><a href="">Gadap Town Karachi</a></li>
+                        </ul>
+                        <a href="" class="ch-9 txt-color-2">View All Areas in Karachi</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-----------------------------/Section-------------------------------------->
+<!------------------------------Footer--------------------------------------->
+<footer class="">
+    <div class="container">
+        <div class="row footer-nav mb-4">
+
+            <div class="col-sm-12 col-md-3 col-lg-3 mb-3 mt-3 ">
+                <div class="d-flex flex-column bd-highlight">
+                    <div class=" bd-highlight">
+                        <div class="ch-7 text-black mb-2 fb-b">
+                            Quick Links
+                        </div>
+                    </div>
+                    <div class=" bd-highlight">
+                        <ul>
+                            <li><a href="about-us.html">About Us</a></li>
+                            <li><a href="properties.html">Properties</a></li>
+                            <li><a href="our-blog.html">Our Blog</a></li>
+                            <li><a href="agents.html">Agent</a></li>
+                            <li><a href="agencies.html">Agencies</a></li>
+                            <li><a href="contact-us.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-3 col-lg-3 mb-3 mt-3 ">
+                <div class="d-flex flex-column bd-highlight">
+                    <div class=" bd-highlight">
+                        <div class="ch-7 text-black mb-2 fb-b">
+                            Location
+                        </div>
+                    </div>
+                    <div class=" bd-highlight">
+                        <ul>
+                            <li><a href="">Projects in Pakistan</a></li>
+                            <li><a href="">Projects in Karachi</a></li>
+                            <li><a href="">Projects in Lahore</a></li>
+                            <li><a href="">Projects in Islamabad</a></li>
+                            <li><a href="">Property Directory for Cities</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-3 col-lg-3 mb-3 mt-3 ">
+                <div class="d-flex flex-column bd-highlight">
+                    <div class=" bd-highlight">
+                        <div class="ch-7 text-black mb-2 fb-b">
+                            Contact Us
+                        </div>
+                    </div>
+                    <div class=" bd-highlight">
+                        <div class="d-flex bd-highlight">
+                            <div class=" flex-shrink-1 bd-highlight"><i class="fas fa-clock txt-color-2"></i></div>
+                            <div class="ps-2 w-100 bd-highlight mb-2">
+                                <div class="ch-8 text-black fb-b">Opening Time:</div>
+                                <div class="ch-8 text-muted">Business Hours: Available 24/7</div>
+                            </div>
+                        </div>
+                        <div class="d-flex bd-highlight">
+                            <div class=" flex-shrink-1 bd-highlight"><i class="fas fa-phone-alt txt-color-2"></i></div>
+                            <div class="ps-2 w-100 bd-highlight mb-2">
+                                <div class="ch-8 text-black fb-b">Phone:</div>
+                                <div class="ch-8 text-muted">Call Us: 1 (123) 458-7890</div>
+                            </div>
+                        </div>
+                        <div class="d-flex bd-highlight">
+                            <div class=" flex-shrink-1 bd-highlight"><i class="fas fa-envelope txt-color-2"></i></div>
+                            <div class="ps-2 w-100 bd-highlight mb-2">
+                                <div class="ch-8 text-black fb-b">Email:</div>
+                                <div class="ch-8 text-muted">info@youremail.com</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-3 col-lg-3 mb-3 mt-3 ">
+                <div class="d-flex flex-column bd-highlight">
+                    <div class=" bd-highlight">
+                        <div class="ch-7 text-black mb-2 fb-b">
+                            Follow Us
+                        </div>
+                    </div>
+                    <div class=" bd-highlight">
+                        <div class="mt-2 mb-3">
+                            <a href="" class="btn social-link-footer"><i class="fab fa-facebook-f"></i></a>
+                            <a href="" class="btn social-link-footer"><i class="fab fa-twitter"></i></a>
+                            <a href="" class="btn social-link-footer"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="" class="btn social-link-footer"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class=" bd-highlight">
+                        <div class="ch-7 text-black mb-2 fb-b">
+                            Search Property by ID
+                        </div>
+                        <div class="cus-search-group">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Property ID">
+                                <span class=" input-group-text">
+                                    <button class="cus-btn-5"><i class="far fa-search"></i></button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="d-flex bd-highlight">
+            <div class="me-auto pt-2 bd-highlight">
+                <div class="text-muted ch-8 ">
+                    Copyright © 2022 OnProperty All rights reserved.
+                </div>
+            </div>
+            <div class="pt-2 bd-highlight cus-footer-bottom-nav">
+                <ul class="" >
+                    <li>
+                        <a class="" href="term-of-use.html"> Terms & Conditions</a>
+                    </li>
+                    <li>
+                        <a class="" href="#">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a class="" href="#">Disclaimer</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+
+    </div>
+</footer>
+<!-------------------------/Footer------------------------------------------>
+<!-----------------------------Script--------------------------------------->
+
+<script src="assets/js/jquery-3.6.0.min.js"></script>
+<script src="assets/vendors/bootstrap-5.1.3-dist/js/bootstrap.js"></script>
+<script src="assets/vendors/slick-1.8.1/slick/slick.js"></script>
+<script src="assets/js/script.js"></script>
+
+<!----------------------------/Script--------------------------------------->
+<!--------------------------Slider--------------------------------------->
+<script>
+    $('.product-home-slider').slick({
+        centerMode: true,
+        centerPadding: '60px',
+        slidesToShow: 4,
+        dots: true,
+        responsive: [
+            {
+                breakpoint: 992,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 1
+                }
+            }
+        ]
+    });
+
+
+
+</script>
+<!-------------------------/Slider--------------------------------------->
+
+
+
+
+
+
+</body>
+</html>

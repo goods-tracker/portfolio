@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" data-textdirection="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="csrf-token" content="">
+    <title>Sign In</title>
+    <base href="">
+
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <meta property="og:url"           content="" />
+    <meta property="og:type"          content="" />
+    <meta property="og:title"         content="" />
+    <meta property="og:description"   content="" />
+    <meta property="og:image"         content="" />
+
+    <link rel="apple-touch-icon" sizes="57x57" href="">
+    <link rel="apple-touch-icon" sizes="60x60" href="">
+    <link rel="apple-touch-icon" sizes="72x72" href="">
+    <link rel="apple-touch-icon" sizes="76x76" href="">
+    <link rel="apple-touch-icon" sizes="114x114" href="">
+    <link rel="apple-touch-icon" sizes="120x120" href="">
+    <link rel="apple-touch-icon" sizes="144x144" href="">
+    <link rel="apple-touch-icon" sizes="152x152" href="">
+    <link rel="apple-touch-icon" sizes="180x180" href="">
+    <link rel="icon" type="image/png" sizes="192x192"  href="">
+    <link rel="icon" type="image/png" sizes="32x32" href="">
+    <link rel="icon" type="image/png" sizes="96x96" href="">
+    <link rel="icon" type="image/png" sizes="16x16" href="">
+    <link rel="manifest" href="">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/vendors/select-country/css/countrySelect.css">
+    <link rel="stylesheet" href="assets/vendors/select-country/css/demo.css">
+    <link href="assets/vendors/slick-1.8.1/slick/slick-theme.css" rel="stylesheet">
+    <link href="assets/vendors/slick-1.8.1/slick/slick.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="assets/vendors/bootstrap-5.1.3-dist/css/bootstrap.css" rel="stylesheet"><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+<body>
+<!--------------------------Section-------------------------------------->
+<section class="background-2 position-relative">
+    <div class="container">
+        <div class="row">
+            <div class="position-absolute top-50 start-50 translate-middle">
+                <div class="col-md-5 col-sm-12 col-lg-5 mx-auto ">
+                    <div class="text-center w-100">
+                        <img src="assets/img/logo-black.svg" height="150px" width="150px">
+                        <div class="text-white ch-8 fb-b mb-3 mt-2">
+                            Enter Your Phone Number & Password
+                        </div>
+
+                        <form class="row g-3">
+                            <div class="col-12  ">
+                                <input type="email" class="form-control border-1 bg-color-31 cus-bor-1 text-white rounded-3 input-focus p-4" placeholder="Email or Phone Number">
+                            </div>
+                            <a href="forgot-password.html" class="text-danger ch-8 fb-b text-end">
+                                Forgot Password?
+                            </a>
+                            <div class="col-12  cus-input-group-1">
+                                <div class="input-group cus-bor-1 bg-color-31 rounded-3">
+                                    <input type="password" class="form-control text-white bg-transparent border-0 input-focus" id="passToggle" placeholder="Password">
+                                    <span class="input-group-text border-0 bg-transparent"><i class="fas fa-eye txt-color-5" onclick="pass_toggle()" type="button"></i></span>
+                                </div>
+                            </div>
+
+
+                            <div class="col-12 ">
+                                <a href="home.html" type="button" class="btn p-2 ch-7 cus-btn-1 w-100 fb-b rounded-3">LGOIN</a>
+                            </div>
+                            <div class="col-12 ">
+                                <div class="d-flex bd-highlight ">
+                                    <div class="me-auto bd-highlight w-100">
+                                        <div class="w-100 hr bg-color-30 mt-3"></div>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                    <span class="text-white ch-7 mt-1 ms-2 me-2 fb-b">
+                                        OR
+                                    </span>
+                                    </div>
+                                    <div class="bd-highlight w-100">
+                                        <div class="w-100 hr bg-color-30 mt-3"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <div class="d-flex bd-highlight">
+                                    <div class="p-2 bd-highlight">
+                                        <a href="home.html"><img src="assets/img/icons/facebook-color.svg" class=""></a>
+                                    </div>
+                                    <div class="p-2 bd-highlight ">
+                                        <a href="home.html"><img src="assets/img/icons/google-color.svg" class=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-white fb-b ch-8 text-center fixed-bottom ">
+                Don’t Have an Account? <a href="index.html" class="text-danger fb-b"> Sign Up</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-------------------------/Section-------------------------------------->
+
+<!--------------------------Script--------------------------------------->
+<script src="assets/js/jquery-3.6.0.min.js"></script>
+<script src="assets/vendors/bootstrap-5.1.3-dist/js/bootstrap.js"></script>
+<script src="assets/js/script.js"></script>
+<script src="assets/vendors/slick-1.8.1/slick/slick.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="assets/vendors/select-country/js/countrySelect.js"></script>
+<script>
+    $("#country_selector").countrySelect({
+        // defaultCountry: "jp",
+        // onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
+        // responsiveDropdown: true,
+        preferredCountries: ['ca', 'gb', 'us']
+    });</script>
+<script>
+
+    function pass_toggle() {
+        var x = document.getElementById("passToggle");
+        if (x.type === "password") {
+            x.type = "text";
+        } else {
+            x.type = "password";
+        }
+    }
+
+</script>
+<!-------------------------/Script--------------------------------------->
+<!--------Slider Start--------->
+
+
+<!--------Slider END----------->
+</body>
+</html>
